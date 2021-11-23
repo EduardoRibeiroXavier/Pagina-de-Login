@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(img/Despedida\ discord\ -\ Imgur.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 250px;
+}
+/*Estilização do container, Alinhamento e espaçamento na página */ 
+
+.card {
+    background-color: #ffffff80;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px #00000070;
+}
+/* Estilização do card, espaçamento, bordas e cor de fundo */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #180D29;
+}
+/* Estilização do titulo*/
+
+/*Estilização dos inputs e efeitos de transição */
+.inputs input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #180D29;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+/* Estilização dos inputs de e-mail e senha*/
+.inputs {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Estilização de borda ao clicar nos inputs */
+.inputs input:focus {
+    border-bottom: 2px solid #2A1030;
+}
+/* Estilização dos nomes dos inputs de e-mail e senha */
+.inputs label {
+    color: #180D29;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s  ease-out;
+}
+/* Focos de levantar o nome dos inputs ao clicar */
+.inputs input:focus + label,
+.inputs input:valid + label
+{
+    font-size: 13px;
+    margin-top: 0;
+    color: #4038a0;
+}
+/* Estilização do botão de entrar */
+button {
+    background-color: transparent;
+    border-color: #180D29;
+    color: #180D29;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+}
+/* hover para quando clicar no botão mudar de cor */
+button:hover {
+    background-color: #180D29;
+    color: white;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+/* Centralização da linha para um melhor design */
+.line {
+    display: flex;
+    justify-content: center;
+}
+/* Estilização da linha */
+hr {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
+}
+/* Estilização dos paragrafos*/
+p {
+    color: #180D29;
+    font-size: 14pt;
+    text-align: center;
+}
+
+a {
+    color: #5B173E;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* hover de mudar de cor ao clicar no 'Cadastre-se'*/
+a:hover {
+    color: #180D29;
+    transition: all .3s ease-out;
+}
+
+/* Estilização do icone de ver senha do input senha */
+.fa-eye {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: #180D29;
+}
